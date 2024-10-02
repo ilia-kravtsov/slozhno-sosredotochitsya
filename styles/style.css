@@ -20,7 +20,7 @@
 
 .decorated-zone {
   position: relative;
-  /* fixed the way you wanted, but please watch pixel_perfect folder */
+  /* fixed as you wanted, but please, loot at this - https://disk.yandex.ru/d/Lq_aZYqiyce_5g */
 }
 
 .decorated-zone::before,
