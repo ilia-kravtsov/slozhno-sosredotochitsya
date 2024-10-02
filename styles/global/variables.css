@@ -1,13 +1,12 @@
 :root {
-  /* Colors */
-  --accent-color: #ff0070;
-  --accent-color-opacity: #ff007066;
-  --font-color: #f1b2ce;
-  --decoration-color: var(--accent-color);
-  --dark-color: #000028;
+  --accent-font-color: #ff0070;
+  --accent-background-color: #ff0070;
+  --accent-color-opacity: #ff007040;
+  --main-font-color: #f1b2ce;
+  --sub-font-color: #000028;
+  --background-color: #000028;
   --main-title-color: #db00ff;
 
-  /* Fonts */
   --font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   --font-size-regular: 18px;
   --line-height-small: 1.125rem;
@@ -15,16 +14,16 @@
   --line-height-large: 5.98125rem;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
+  --text-shadow: 2px 2px 0 var(--accent-font-color, #ff0070);
+  --text-shadow-x2: 4px 4px 0 var(--accent-font-color, #ff0070);
 
-  /* Sizes */
   --page-title-mobile-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-title-desktop-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --description-size: clamp(364px, calc(50% - 10px), 491px);
   --topic-tablet-size: clamp(236px, calc(100% / 3.25), 315px) 1fr;
+  --decor-sizes: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 
-  --text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
-  --text-shadow-x2: 4px 4px 0 var(--accent-color, #ff0070);
-  --padding-section: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  --is-light: visible;
-  --background-image: url("../../images/cover-image-dark.png");
+  --page-background-image: url(../../images/cover-image-dark.png);
+
+  --decor-element-visibility: visible;
 }
