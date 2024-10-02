@@ -20,6 +20,7 @@
 
 .decorated-zone {
   position: relative;
+  /* fixed the way you wanted, but please watch pixel_perfect folder */
 }
 
 .decorated-zone::before,
@@ -49,7 +50,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
   padding: var(--decor-sizes, clamp(10px, 0.0286rem + 2.5445vw, 20px));
-  min-block-size: 100dvh;
+  /* fixed */
+  min-block-size: 668px;
+  block-size: 100vh;
 }
 
 .header__decor-element {
@@ -72,7 +75,8 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  box-shadow: 0 0 2px 2px var(--accent-font-color, #ff0070);
+  /* fixed */
+  box-shadow: 0 0 4px 2px var(--accent-font-color, #ff0070);
   background: var(--accent-font-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
@@ -100,7 +104,8 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--accent-color-opacity, #ff007040);
+  /* fixed */
+  border-color: var(--accent-color-opacity, #ff007066);
 }
 
 .header__theme-menu-button:focus {
@@ -156,12 +161,15 @@
 
 .topic__link {
   display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
   text-decoration: none;
   text-shadow: var(--text-shadow, 2px 2px 0 var(--accent-font-color, #ff0070));
 }
 
 .topic__link:hover {
-  text-decoration: underline;
+  /* fixed */
+  border-bottom: 1px solid currentColor;
 }
 
 .topic__link:focus {
@@ -190,7 +198,9 @@
   display: grid;
   place-items: center;
   padding: var(--decor-sizes, clamp(10px, 0.0286rem + 2.5445vw, 20px));
-  min-block-size: 100dvh;
+  /* fixed */
+  min-block-size: 668px;
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -242,22 +252,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .gallery__list-item:first-child,
-  .gallery__list-item:last-child {
+  .gallery__list-item--wide {
     grid-column-start: span 2;
   }
 
-  .gallery__list-item:nth-child(2),
-  .gallery__list-item:nth-child(3) {
+  .gallery__list-item--tall {
     grid-row-start: span 2;
   }
 
   .page-title {
     font-size: var(--page-title-desktop-size, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
-  }
-
-  .decorated-zone::after {
-    inset-block-end: 65px;
   }
 }
 
@@ -286,14 +290,5 @@
   .header__description {
     margin-block-start: 20px;
   }
-
-  .decorated-zone::after {
-    inset-block-end: 40px;
-  }
 }
 
-@media (width >= 768px), (width >= 1024px) {
-  .decorated-zone--second::after {
-    inset-block-end: var(--decor-sizes, clamp(10px, 0.0286rem + 2.5445vw, 20px));
-  }
-}

@@ -1,7 +1,8 @@
 .page.theme_dark {
   --accent-font-color: #ff0070;
   --accent-background-color: #ff0070;
-  --accent-color-opacity: #ff007040;
+    /* fixed */
+  --accent-color-opacity: #ff007066;
   --main-font-color: #f1b2ce;
   --sub-font-color: #000028;
   --background-color: #000028;
@@ -19,7 +20,8 @@
   :root {
   --accent-font-color: #ff0070;
   --accent-background-color: #ff0070;
-  --accent-color-opacity: #ff007040;
+    /* fixed */
+  --accent-color-opacity: #ff007066;
   --main-font-color: #f1b2ce;
   --sub-font-color: #000028;
   --background-color: #000028;

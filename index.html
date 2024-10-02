@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="styles/global/globals.css">
-    <link rel="stylesheet" href="styles/global/variables.css">
+    <link rel="stylesheet" href="./styles/global/globals.css">
+    <link rel="stylesheet" href="./styles/global/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css">
@@ -49,6 +49,7 @@
         no focus
       </h1>
       <p class="header__description title-decor">
+        <!-- при &nbsp; нет совпадения с макетом -->
         Что делать, когда не можешь делать ничего<br>
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
@@ -215,7 +216,7 @@
           А можно в картинках?
         </h2>
         <ul class="gallery__list">
-          <li class="gallery__list-item">
+          <li class="gallery__list-item gallery__list-item--wide">
             <picture>
               <img 
                 class="gallery__image"
@@ -225,7 +226,7 @@
               >
             </picture>
           </li>
-          <li class="gallery__list-item">
+          <li class="gallery__list-item gallery__list-item--tall">
             <picture>
               <img 
                 class="gallery__image"
@@ -235,7 +236,7 @@
               >
             </picture>
           </li>
-          <li class="gallery__list-item">
+          <li class="gallery__list-item gallery__list-item--tall">
             <picture>
               <img 
                 class="gallery__image"
@@ -255,7 +256,7 @@
               >
             </picture>
           </li>
-          <li class="gallery__list-item">
+          <li class="gallery__list-item gallery__list-item--wide">
             <picture>
               <img 
                 class="gallery__image"
