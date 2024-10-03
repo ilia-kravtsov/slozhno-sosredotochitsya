@@ -20,7 +20,6 @@
 
 .decorated-zone {
   position: relative;
-  /* fixed as you wanted, but please, look at this - https://disk.yandex.ru/d/Lq_aZYqiyce_5g */
 }
 
 .decorated-zone::before,
@@ -50,7 +49,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr auto 1fr;
   padding: var(--decor-sizes, clamp(10px, 0.0286rem + 2.5445vw, 20px));
-  /* fixed */
   min-block-size: 668px;
   block-size: 100vh;
 }
@@ -75,7 +73,6 @@
   content: "";
   display: inline-block;
   border-radius: 50%;
-  /* fixed */
   box-shadow: 0 0 4px 2px var(--accent-font-color, #ff0070);
   background: var(--accent-font-color, #ff0070);
   inline-size: 9px;
@@ -104,7 +101,6 @@
 }
 
 .header__theme-menu-button:hover {
-  /* fixed */
   border-color: var(--accent-color-opacity, #ff007066);
 }
 
@@ -168,7 +164,6 @@
 }
 
 .topic__link:hover {
-  /* fixed */
   border-bottom: 1px solid currentColor;
 }
 
@@ -198,7 +193,6 @@
   display: grid;
   place-items: center;
   padding: var(--decor-sizes, clamp(10px, 0.0286rem + 2.5445vw, 20px));
-  /* fixed */
   min-block-size: 668px;
   block-size: 100vh;
 }
